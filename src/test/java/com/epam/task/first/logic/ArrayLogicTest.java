@@ -110,7 +110,7 @@ public class ArrayLogicTest {
         Array array = new Array();
 
         //when
-        arrayLogic.updateArrayByIndex(array,0,0);
+        arrayLogic.updateArrayByIndex(array, 0, 0);
 
         //then
 
@@ -124,7 +124,7 @@ public class ArrayLogicTest {
         int updatedValue = 0;
 
         //when
-        arrayLogic.updateArrayByIndex(array,index,updatedValue);
+        arrayLogic.updateArrayByIndex(array, index, updatedValue);
 
         //then
 
@@ -174,7 +174,7 @@ public class ArrayLogicTest {
         Array array = new Array();
 
         //when
-        arrayLogic.updateArrayByValue(array,0,0);
+        arrayLogic.updateArrayByValue(array, 0, 0);
 
         //then
 

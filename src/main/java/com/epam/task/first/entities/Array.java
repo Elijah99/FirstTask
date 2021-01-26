@@ -1,8 +1,6 @@
 package com.epam.task.first.entities;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Array {
 
@@ -19,5 +17,20 @@ public class Array {
 
     public List<Integer> getElements() {
         return elements;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Array array = (Array) o;
+        Collections.sort(array.elements);
+        Collections.sort(elements);
+        return Objects.equals(elements, array.elements);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(elements);
     }
 }

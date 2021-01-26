@@ -141,6 +141,4 @@ class ArrayLogic {
             return true;
         }
     }
-
-
 }
